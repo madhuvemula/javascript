@@ -1,0 +1,16 @@
+div .col-md-6{
+margin-top: 150px;
+}
+img{
+	height: 150px; 
+	width: 130px;
+}
+#img{
+	margin-left: 60px;
+}
+button{
+	margin-left: 12px;
+}
+a{
+	margin-left: 100px;
+}
