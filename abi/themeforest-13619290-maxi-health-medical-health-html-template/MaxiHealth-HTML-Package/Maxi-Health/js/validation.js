@@ -2,11 +2,11 @@
 $(document).ready(function() {
     $('#registrationForm').bootstrapValidator({
         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
-        feedbackIcons: {
+       /* feedbackIcons: {
             valid: 'glyphicon glyphicon-ok',
             invalid: 'glyphicon glyphicon-remove',
             validating: 'glyphicon glyphicon-refresh'
-        },
+        },*/
         fields: {
             username: {
                 message: 'The username is not valid',

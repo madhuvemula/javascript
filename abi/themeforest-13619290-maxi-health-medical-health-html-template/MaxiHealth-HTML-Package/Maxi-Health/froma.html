@@ -21,29 +21,33 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-6">
+            <div class="col-md-3"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-4 ">
                 <div class=" pull-center" id="img">
                     <img src="images/icon5.jpg" class="img-circle img-responsive">
                 </div>
                 <div><h1></h1></div>
                 <form id="registrationForm" method="post" class="form-horizontal">
                     <div class="form-group">
-                        <div class="col-sm-6">
+                        <div class="col-sm-12">
                             <input type="text" class="form-control" name="username" placeholder="username" />
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-sm-6">
+                        <div class="col-sm-12">
                             <input type="password" class="form-control" name="password" placeholder="password" />
                         </div>
                     </div>
                     <div class="form-group">
+                        <div class="pull-center" style="margin-left: 10px;">
+                            <input type="checkbox" name="box"> Rember me
+                        </div>
                         
-                            <!-- Do NOT use name="submit" or id="submit" for the Submit button -->
-                            <button type="submit" class="btn btn-primary">Log in</button>
-                             <a href="singup.html" class="btn btn-primary " > Sing up</a> 
-                        
+                            <!-- Do NOT use name="submit" or id="submit" for the Submit button --><div>
+                            <button type="submit" class="btn btn-primary btn-block">Log in</button>
+                             <a href="singup.html" class="btn btn-primary btn-block " > Register</a> 
+                        </div>
                         </div>
                         
                             
@@ -51,7 +55,9 @@
                     </div>
                 </form>
             </div>
+             <div class="col-md-3"></div>
         </div>
+
     </div>
     <!--  -->
 </body>
