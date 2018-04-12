@@ -12,7 +12,7 @@ $(document).ready(function() {
                 message: 'The username is not valid',
                 validators: {
                     notEmpty: {
-                        message: ' enter yours usernameid '
+                        message: ' enter yours username id'
                     },
                     stringLength: {
                         min: 6,
@@ -44,6 +44,10 @@ $(document).ready(function() {
                     notEmpty: {
                         message: 'enter yours password '
                     },
+                     regexp: {
+                        regexp: /^[a-zA-Z0-9!-)]+$/,
+                        message: 'The username can only consist of alphabetical and number'
+                    },
                     different: {
                         field: 'username',
                         message: 'The password cannot be the same as username'
@@ -51,6 +55,19 @@ $(document).ready(function() {
                     stringLength: {
                         min: 8,
                         message: 'The password must have at least 8 characters'
+                    }
+                }
+            },
+            telno: {
+                validators: {
+                    notEmpty: {
+                        message: 'enter yours Phone number '
+                    },
+                   
+                    stringLength: {
+                        min: 10,
+                     
+                        message: 'The Phone number must have at least 10 no'
                     }
                 }
             },

@@ -32,6 +32,7 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <!-- Library - Bootstrap v3.3.5 -->
     <link rel="stylesheet" type="text/css" href="libraries/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrapValidator.min.css" />
     <!-- Font Icons -->
     <link rel="stylesheet" type="text/css" href="libraries/fonts/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="libraries/fonts/elegant-icons.css">
@@ -99,8 +100,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 logo-block pull-left">
-                            <h3>DR.Arumugam<small> D.ortho,M.M.ortho,M.ch(orth)</small></h3>
-                        </div>
+                            <h4><img src="images/Aru_Logo.png" style="width: 170px;"><small> D.ortho.,M.M.ortho,M.ch(orth)</small></h4> </div>
                         <div class="col-md-8 text-right pull-center">
                             <div class="location">
                                 <h3><img src="images/location-ic.png" alt="Location" /> Our Location</h3>
@@ -335,13 +335,13 @@
                     <!-- Service /- -->
                     <div class="col-md-4 col-sm-12 col-xs-12">
                         <!-- Appointment Form -->
-                        <form class="appoinment-form" name="myFrom" ">
+                        <form id="registrationForm" method="post" class="appoinment-form form-horizontal" name="myFrom" ">
 							<h3><img src="images/appoinment.png " alt="appoinment "/>Appointment form</h3>
 							<div class="form-group col-md-12 no-padding ">
-								<input type="text " id="your-name " name="fname " class="form-control " placeholder="Your Name " required>
+								 <input type="text " class="form-control " name="name" placeholder="your name " />
 							</div>
 							<div class="form-group col-md-12 no-padding ">
-								<input type="tel " id="telno " class="form-control " placeholder="Phone number " required>
+								 <input type="text " class="form-control " name="phonenumber" placeholder="Phone number " />
 							</div>
 							<div class="form-group input-group col-md-12 no-padding ">
 								<div class="col-md-7 no-padding ">
@@ -372,8 +372,8 @@
 								<textarea rows="4 " id="textarea_message " class="form-control " placeholder="Your Message... "></textarea>
 							</div>
 							<div class="form-group col-md-12 col-sm-12 col-xs-12 no-padding ">
-								<input type="checkbox "><span>Send Email Notification</span>
-									<button type="submit " class="btn btn-primary pull-right ">submit</button>
+								<input type="checkbox"><span>Send Email Notification</span>
+									<button type="submit " class="btn btn-primary pull-right "><img src="images/heart-sm.png " alt="heart-sm ">submit</button>
 								
 							</div>
 						</form><!-- Appointment Form /- -->
@@ -814,8 +814,8 @@
 					<div class="col-md-4 col-sm-4 address-box detail-box ">
 						<i><img src="images/ftr-location.png " alt="Loactaion " /></i>
 						<h4>hospital address</h4>
-						<p>148,101 Street,15th Sector,KK Nagar,Chennai–600 078</p>
-						
+						<p>148,101 Street,15th Sector,KK Nagar </p>
+						<p>Chennai–600 078</p>
 					</div>
 					<div class="col-md-4 col-sm-4 phone-box detail-box ">
 						<i><img src="images/ftr-phone.png " alt="Phone " /></i>
@@ -835,7 +835,7 @@
 				<div class="row ">
 					<div class="col-md-4 col-sm-6 col-xs-12 ">
 						<aside class="widget widget-about ">
-							<h3><img src="images/logo-ftr.png " alt="Logo " /></h3>
+							<h4><img src="images/aru.png " alt="Logo " /><small> D.ortho.,M.M.ortho,M.ch(orth)</small></h4>
 							<p>Aqui blanditiis praesentium voluptatum delenitia atque corrupti quos dolores.</p>
 							<div class="time-schedule ">
 								<p>Monday - Friday <span>9.00 - 21.00</span></p>
@@ -889,7 +889,7 @@
 			</div><!-- Container /- -->
 			<!-- Bottom Footer -->
 			<div class="container-fluid no-padding bottom-footer ">
-				<p>&copy; 2017 Maxi Health. All Rights Reserved.</p>
+				<p>© 2017 | Designed by Coeuz Info Pvt Ltd. All Rights Reserved.</p>
 			</div><!-- Bottom Footer /- -->
 		</footer>
 
@@ -898,11 +898,15 @@
 	<!-- JQuery v1.11.3 -->
 	<script src="js/jquery.min.js "></script>
 
+
 	<!-- Library - Modernizer -->
 	<script src="libraries/modernizr/modernizr.js "></script>
 
 	<!-- Library - Bootstrap v3.3.5 -->
-	<script src="libraries/bootstrap/bootstrap.min.js "></script><!-- Bootstrap JS File v3.3.5 -->
+	<script src="libraries/bootstrap/bootstrap.min.js "></script>
+    <script type="text/javascript " src="js/bootstrapValidator.min.js "></script>
+    <script type="text/javascript " src="js/validation1.js "></script>
+	<!-- Bootstrap JS File v3.3.5 -->
 
 	<!-- jQuery Easing v1.3 -->
 	<script src="js/jquery.easing.min.js "></script>
