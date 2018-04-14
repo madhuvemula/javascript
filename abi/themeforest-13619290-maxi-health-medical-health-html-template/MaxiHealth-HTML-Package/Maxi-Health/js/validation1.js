@@ -12,7 +12,7 @@ $(document).ready(function() {
                 message: 'The username is not valid',
                 validators: {
                     notEmpty: {
-                        message: ' enter yours name'
+                        message: ' Enter your name'
                     },
                     stringLength: {
                         min: 6,
@@ -30,14 +30,14 @@ $(document).ready(function() {
             phonenumber: {
                 validators: {
                     notEmpty: {
-                        message: 'enter yours phone no '
+                        message: 'Enter your phone number'
                     },
                     
                     stringLength: {
                         min: 10,
                         max: 14,
                         
-                        message: 'The password must have at least 10 number'
+                        message: 'The moblie number must have at least 10 number'
                     }
                 }
             },

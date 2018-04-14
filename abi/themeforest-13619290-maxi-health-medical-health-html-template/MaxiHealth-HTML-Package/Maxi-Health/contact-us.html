@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Maxi Health</title>
+    <title>Contact</title>
     <!-- Standard Favicon -->
     <link rel="icon" type="image/x-icon" href="images//favicon.ico" />
     <!-- For iPhone 4 Retina display: -->
@@ -32,6 +32,7 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <!-- Library - Bootstrap v3.3.5 -->
     <link rel="stylesheet" type="text/css" href="libraries/bootstrap/bootstrap.min.css">
+     <link rel="stylesheet" href="css/bootstrapValidator.min.css" />
     <!-- Font Icons -->
     <link rel="stylesheet" type="text/css" href="libraries/fonts/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="libraries/fonts/elegant-icons.css">
@@ -86,7 +87,7 @@
                                 <li><a href=" https://plus.google.com/u/0/102423081794643100282" title="Google+"><i class="fa fa-google-plus"></i></a></li>
                                 <li><a href="https://www.youtube.com/channel/UCah8Yv9UQRF-a7La0knL45w" title="youtube"><i class="fa fa-youtube"></i></a></li>
                             </ul>
-                            <a href="froma.html" title="Log in"><span>+</span>Log in</a>
+                            <a href="http://drarumugam.com/login.jsp" title="Log in"><span>+</span>Log in</a>
                         </div>
                     </div>
                 </div>
@@ -239,20 +240,20 @@
             <!-- Enquiry Us -->
             <div class="leave-comment enquiry-us">
                 <h3 class="section-heading">Enquiry Us</h3>
-                <form id="contact-form" class="comment-form enquiry-form" method="post">
+                <form id="registrationForm" method="post" id="contact-form" class="comment-form enquiry-form" method="post">
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-group">
                                 <label>Name*</label>
-                                <input type="text" name="contact-name" class="form-control" id="input_name" required/>
+                                <input type="text" name="name" class="form-control" id="input_name" required/>
                             </div>
-                            <div class="form-group">
+                           <!--  <div class="form-group">
                                 <label>E-Mail*</label>
                                 <input type="email" name="contact-email" class="form-control" id="input_email" required/>
-                            </div>
+                            </div> -->
                             <div class="form-group">
                                 <label>Phone Number*</label>
-                                <input type="text" name="contact-phone" class="form-control" id="input_phone" required/>
+                                 <input type="text " class="form-control " name="phonenumber" required/>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
@@ -261,7 +262,7 @@
                                 <textarea class="form-control" name="contact-message" id="textarea_message"></textarea>
                             </div>
                             <div class="form-group">
-                                <input type="submit" value="Contact Now" id="btn_submit" name="post">
+                                <button type="submit " class="btn btn-primary btn-block">Contact Now</button>
                             </div>
                             <div id="alert-msg" class="alert-msg"></div>
                         </div>
@@ -370,6 +371,8 @@
     <script src="libraries/modernizr/modernizr.js"></script>
     <!-- Library - Bootstrap v3.3.5 -->
     <script src="libraries/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript " src="js/bootstrapValidator.min.js "></script>
+    <script type="text/javascript " src="js/validation1.js "></script>
     <!-- Bootstrap JS File v3.3.5 -->
     <!-- jQuery Easing v1.3 -->
     <script src="js/jquery.easing.min.js"></script>
