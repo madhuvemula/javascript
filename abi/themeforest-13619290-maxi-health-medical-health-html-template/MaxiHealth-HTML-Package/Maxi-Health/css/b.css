@@ -3,10 +3,10 @@
         
         margin: 8px;
         padding:5px;
-   font-family:  'PT Sans', sans-serif;
+        color:#848482;
        }
 
-    @font-face {
+   /* @font-face {
     font-family: 'montserratlight';
     src: url('fonts/montserrat-light.eot');
     src: url('fonts/montserrat-light.eot?#iefix') format('embedded-opentype'),
@@ -16,9 +16,9 @@
          url('fonts/montserrat-light.svg#montserratlight') format('svg');
     font-weight: normal;
     font-style: normal;
-}
-    p,h3{
-        font-family: 'PT Sans', sans-serif;
+}*/
+    .b{
+        color:#848482;
         
     }
  
