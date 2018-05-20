@@ -45,13 +45,15 @@
     <link rel="stylesheet" type="text/css" href="css/plugins.css">
     <link rel="stylesheet" type="text/css" href="css/navigation-menu.css">
     <!--[if IE]>
-		<link rel="stylesheet" type="text/css" href="css/all-ie-only.css" />
-	<![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/all-ie-only.css" />
+    <![endif]-->
     <!-- Custom - Theme CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="css/shortcodes.css">
+    <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/4.12/video.js"></script>
     <!--[if lt IE 9]>
-		<script src="js/html5/respond.min.js"></script>
+        <script src="js/html5/respond.min.js"></script>
     <![endif]-->
 </head>
 
@@ -83,7 +85,7 @@
                                 <li><a href="https://www.facebook.com/DRSArumugam-397092847330770/?ref=aymt_homepage_panel" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="https://twitter.com/Dr_SArumugam" title="Twitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="https://plus.google.com/u/0/102423081794643100282" title="Google+"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="https://www.youtube.com/channel/UCah8Yv9UQRF-a7La0knL45w" title="youtube"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCBbrl1EE2Dn3fBDlnT-uOmg" title="youtube"><i class="fa fa-youtube"></i></a></li>
                             </ul>
                             <a href="http://drarumugam.com/login.jsp" title="Log in"><span>+</span>Log in</a>
                         </div>
@@ -98,9 +100,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 logo-block pull-left">
-                             <h4><img src="images/Aru_Logo.png" style="width: 170px;"><small> D.ortho.,M.M.ortho,M.ch(orth)</small></h4>
+                            <h4><img src="images/Aru_Logo.png" style="width: 170px;"><small> D.ortho.,M.M.ortho,M.ch(orth)</small></h4>
                         </div>
-                        <div class="col-md-8 text-right pull-center">
+                        <div class="col-md-8 text-center  pull-center">
                             <div class="location">
                                 <h3><img src="images/location-ic.png" alt="Location" /> Our Location</h3>
                                 <p>Chennai</p>
@@ -132,14 +134,14 @@
                                 <li><a href="about.html">About Me</a></li>
                                 <li><a href="services.html">Services</a></li>
                                 <li><a href="team.html">Our Team</a></li>
-                                <li><a href="departments.html">departments</a></li>
+                                <li><a href="news.html">News</a></li>
                                 <li><a href="gallery.html">Gallery </a></li>
                                 <li class="dropdown active">
                                     <a href="blog.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-                                    <i class="ddl-switch fa fa-angle-down"></i>
+                                    <!-- <i class="ddl-switch fa fa-angle-down"></i>
                                     <ul class="dropdown-menu">
                                         <li><a href="blog-post.html">Blog Post</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                                 <li><a href="contact-us.html">Contact</a></li>
                             </ul>
@@ -209,10 +211,16 @@
                     <div class="col-md-9 col-sm-8 col-xs-12 blog-area ">
                         <article class="blog-post-list col-md-12 col-sm-12 col-xs-12">
                             <div class="entry-header">
-                                <div class="entry-cover">
-                                    <a href="blog-post.html"><img src="images/blog-1.jpg" alt="blog-1"/></a>
-                                    <a href="blog-post.html" class="read-more"><i class="fa fa-link"></i>Read More</a>
-                                </div>
+                                <!-- <div class="entry-cover"> -->
+                                <video id="MY_VIDEO_1" class="video-js vjs-default-skin" controls preload="auto" width="640" height="264" poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+                                    <source src="video/Arumugam 1.mp4" type="video/mp4">
+                                    <source src="video/Arumugam 1.mp4" type="video/mp4">
+                                         <p class="vjs-no-js"><a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+                                </video>
+                                <!--<a href="https://youtu.be/uyw6Yt0xtr4"><img src="https://youtu.be/uyw6Yt0xtr4" alt="blog-1" / class="Sakshi1"></a>-->
+                                <!-- <a href="https://youtu.be/uyw6Yt0xtr4" class="read-more"><i class="fa fa-link"></i>Read More</a>
+                                    
+                                </div> -->
                             </div>
                             <div class="entry-content">
                                 <div class="entry-meta">
@@ -275,16 +283,16 @@
                             <ul class="pagination">
                                 <li>
                                     <a href="#" aria-label="Previous">
-										<span aria-hidden="true">&lt;</span>
-									</a>
+                                        <span aria-hidden="true">&lt;</span>
+                                    </a>
                                 </li>
                                 <li><a href="#">1</a></li>
                                 <li><a href="#">2</a></li>
                                 <li><a href="#">3</a></li>
                                 <li>
                                     <a href="#" aria-label="Next">
-										<span aria-hidden="true">&gt;</span>
-									</a>
+                                        <span aria-hidden="true">&gt;</span>
+                                    </a>
                                 </li>
                             </ul>
                         </nav>
@@ -299,8 +307,8 @@
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Search Here">
                                 <span class="input-group-btn">
-									<button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
-								</span>
+                                    <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                                </span>
                             </div>
                         </aside>
                         <!-- Widget Search /- -->
@@ -439,7 +447,7 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <aside class="widget widget-about">
-                           <h4><img src="images/aru.png" alt="Logo" /><small> D.ortho.,M.M.ortho,M.ch(orth)</small></h4>
+                            <h4><img src="images/aru.png" alt="Logo" /><small> D.ortho.,M.M.ortho,M.ch(orth)</small></h4>
                             <p>Aqui blanditiis praesentium voluptatum delenitia atque corrupti quos dolores.</p>
                             <div class="time-schedule">
                                 <p>Monday - Friday <span>9.00 - 21.00</span></p>
@@ -474,8 +482,8 @@
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Email Address">
                                 <span class="input-group-btn">
-									<button class="btn btn-default" type="button"><i class="fa fa-send-o"></i></button>
-								</span>
+                                    <button class="btn btn-default" type="button"><i class="fa fa-send-o"></i></button>
+                                </span>
                             </div>
                             <!-- /input-group -->
                             <div class="social">

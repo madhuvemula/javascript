@@ -31,12 +31,12 @@
 	font-size: 0.6em;
 }
 
-.tabs-style-bar nav ul li.tab-current a {
+.tabs-style-bar nav ul li.tab-current a:focus {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 500;
 	font-size: 0.6em;
-	color: #2CC185;
+	color: #74777b;
 }
 
 /*****************************/
